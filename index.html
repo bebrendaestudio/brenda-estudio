@@ -1,1 +1,148 @@
-.
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brenda Estudio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: black;
+      color: white;
+      scroll-behavior: smooth;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px 0;
+      z-index: 999;
+    }
+    header nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    section {
+      padding: 100px 20px 60px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .hero {
+      height: 100vh;
+      background: url('fondo.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo {
+      width: 300px;
+    }
+    .horario-box, .plan-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #ff5ec1;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .plan-title {
+      font-size: 1.2em;
+      color: #ff70d4;
+      margin-bottom: 10px;
+    }
+    .whatsapp {
+      background: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#horarios">Horarios</a>
+      <a href="#planes">Planes</a>
+      <a href="#quienes">Quiénes somos</a>
+      <a href="#contacto">Contáctanos</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="logo_blanco.png" alt="Brenda Estudio" class="logo" />
+  </section>
+
+  <section id="horarios">
+    <h2>Horarios</h2>
+    <div class="horario-box">
+      <p><strong>Lunes</strong> – 7:00 PM: Rumba Fire con Laura</p>
+      <p><strong>Martes</strong> – 7:00 PM: Ritmos con Esteban</p>
+      <p><strong>Miércoles</strong> – 7:00 PM: Rumba Fire con Laura</p>
+      <p><strong>Jueves</strong> – 7:00 PM: Coreo Dance con Angélica</p>
+      <p><strong>Viernes</strong> – 7:00 PM: Rumba Fire con Laura</p>
+      <p><strong>Sábado</strong> – 10:00 AM: Ritmos con Esteban</p>
+      <p><strong>Domingo</strong> – 10:00 AM: Rumba Fire con Laura</p>
+      <a class="whatsapp" href="https://wa.me/573115933686" target="_blank">Reservar por WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="planes">
+    <h2>Planes</h2>
+    <div class="plan-box">
+      <p class="plan-title">1 CLASE – $30.000</p>
+      <p class="plan-title">2 CLASES – $58.000</p>
+      <p class="plan-title">4 CLASES – $114.000</p>
+      <p class="plan-title">6 CLASES – $165.000</p>
+      <p class="plan-title">8 CLASES – $216.000</p>
+      <p class="plan-title">10 CLASES – $260.000</p>
+      <p class="plan-title">12 CLASES – $300.000</p>
+      <p class="plan-title">14 CLASES – $343.000</p>
+      <p class="plan-title">16 CLASES – $376.000</p>
+      <p class="plan-title">20 CLASES – $440.000</p>
+      <p class="plan-title">25 CLASES – $538.000</p>
+      <p class="plan-title">30 CLASES – $595.000</p>
+      <p class="plan-title">PLAN ILIMITADO MENSUAL – $680.000</p>
+      <p class="plan-title">PLAN ILIMITADO BIMENSUAL – $1’120.000</p>
+      <p class="plan-title">PLAN ILIMITADO SEMESTRAL – $2’900.000</p>
+      <p class="plan-title">PLAN ILIMITADO ANUAL – $4’800.000</p>
+    </div>
+  </section>
+
+  <section id="quienes">
+    <h2>Quiénes somos</h2>
+    <p>Somos Brenda Estudio, un lugar feliz hecho para todos y todas. Un movimiento que busca repartir y entregar felicidad, actitud y vida a través del baile. Nuestros espacios están hechos para el cuerpo y alma de cada persona que le apuesta a vivir la experiencia de nuestras clases.</p>
+    <div class="gallery">
+      <img src="foto1.jpg" alt="Estudio 1">
+      <img src="foto2.jpg" alt="Estudio 2">
+      <img src="foto3.jpg" alt="Estudio 3">
+      <img src="foto4.jpg" alt="Estudio 4">
+      <img src="foto5.jpg" alt="Estudio 5">
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes dudas? ¡Escríbenos directamente!</p>
+    <a class="whatsapp" href="https://wa.me/573115933686" target="_blank">Hablar por WhatsApp</a>
+  </section>
+</body>
+</html>
