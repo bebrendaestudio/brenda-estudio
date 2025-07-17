@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brenda Estudio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: black;
+      color: white;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    .inicio {
+      height: 100vh;
+      background-image: url('fondo1.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .logo {
+      max-width: 400px;
+      width: 80%;
+      margin-bottom: 20px;
+    }
+
+    .seccion {
+      padding: 40px;
+      text-align: center;
+      background-color: #111;
+    }
+
+    .horario-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .dia {
+      grid-column: 1 / -1;
+      font-size: 1.5em;
+      color: #fff;
+      border-bottom: 2px solid #f0f;
+      padding-bottom: 10px;
+      margin-top: 30px;
+    }
+
+    .clase {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #f0f;
+      padding: 15px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .clase:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: scale(1.03);
+    }
+
+    .nombre {
+      color: #ff00ff;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    .detalle {
+      color: #ccc;
+      font-size: 0.9em;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .galeria img {
+      width: 300px;
+      height: auto;
+      border-radius: 12px;
+      border: 2px solid #ff00ff;
+      box-shadow: 0 0 15px #ff00ff88;
+      transition: transform 0.3s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    .planes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .plan {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #f0f;
+      padding: 15px;
+      border-radius: 12px;
+      color: white;
+    }
+
+    .plan h3 {
+      color: #ff00ff;
+      margin-bottom: 10px;
+    }
+
+    .whatsapp-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #1ebe5d;
+    }
+  </style>
+</head>
+<body>
+
+  <header id="inicio" class="inicio">
+    <img src="logo_blanco.png" alt="Logo Brenda Estudio" class="logo" />
+    <h1>¡El lugar más feliz del mundo!</h1>
+    <nav>
+      <a onclick="mostrarSeccion('horarios')">Horarios</a>
+      <a onclick="mostrarSeccion('planes')">Planes</a>
+      <a onclick="mostrarSeccion('quienes-somos')">Quiénes somos</a>
+      <a onclick="mostrarSeccion('contacto')">Contáctanos</a>
+    </nav>
+  </header>
+
+  <section id="horarios" class="seccion" style="display:none;">
+    <h2>Horarios</h2>
+    <div class="horario-grid">
+      <!-- Aquí se insertará el contenido dinámicamente -->
+
+      <div class="dia">Lunes</div>
+      <div class="clase" onclick="reservar('Salsa Básica - Lunes 6pm')"><span class="nombre">Salsa Básica</span><br><span class="detalle">6 pm - Deisy</span></div>
+      <div class="clase" onclick="reservar('Rumba - Lunes 7pm')"><span class="nombre">Rumba</span><br><span class="detalle">7 pm - Ronny</span></div>
+      <div class="clase" onclick="reservar('Reggaetón Intermedio - Lunes 7pm')"><span class="nombre">Reggaetón Intermedio</span><br><span class="detalle">7 pm - Lil Fox</span></div>
+      <div class="clase" onclick="reservar('Pole Dance - Lunes 7pm')"><span class="nombre">Pole Dance</span><br><span class="detalle">7 pm - Camila</span></div>
+      <div class="clase" onclick="reservar('Heels - Lunes 8pm')"><span class="nombre">Heels</span><br><span class="detalle">8 pm - Pelu</span></div>
+
+      <div class="dia">Martes</div>
+      <div class="clase" onclick="reservar('Bachata - Martes 6pm')"><span class="nombre">Bachata</span><br><span class="detalle">6 pm - Edwar</span></div>
+      <div class="clase" onclick="reservar('Twerk Básico - Martes 6pm')"><span class="nombre">Twerk Básico</span><br><span class="detalle">6 pm - Alessa</span></div>
+      <div class="clase" onclick="reservar('Rumba - Martes 7pm')"><span class="nombre">Rumba</span><br><span class="detalle">7 pm - Ronny</span></div>
+      <div class="clase" onclick="reservar('Pole Dance - Martes 7pm')"><span class="nombre">Pole Dance</span><br><span class="detalle">7 pm - Camila</span></div>
+      <div class="clase" onclick="reservar('Reggaetón Básico - Martes 7pm')"><span class="nombre">Reggaetón Básico</span><br><span class="detalle">7 pm - Lil Fox</span></div>
+      <div class="clase" onclick="reservar('Heels - Martes 8pm')"><span class="nombre">Heels</span><br><span class="detalle">8 pm - Pelu</span></div>
+
+      <div class="dia">Miércoles</div>
+      <div class="clase" onclick="reservar('Afro - Miércoles 6pm')"><span class="nombre">Afro</span><br><span class="detalle">6 pm - Alessa</span></div>
+      <div class="clase" onclick="reservar('Twerk Intermedio - Miércoles 6pm')"><span class="nombre">Twerk Intermedio</span><br><span class="detalle">6 pm - Alessa</span></div>
+      <div class="clase" onclick="reservar('Rumba - Miércoles 7pm')"><span class="nombre">Rumba</span><br><span class="detalle">7 pm - Ronny</span></div>
+      <div class="clase" onclick="reservar('Reggaetón Intermedio - Miércoles 7pm')"><span class="nombre">Reggaetón Intermedio</span><br><span class="detalle">7 pm - Lil Fox</span></div>
+      <div class="clase" onclick="reservar('Pole Dance - Miércoles 7pm')"><span class="nombre">Pole Dance</span><br><span class="detalle">7 pm - Camila</span></div>
+      <div class="clase" onclick="reservar('Heels - Miércoles 8pm')"><span class="nombre">Heels</span><br><span class="detalle">8 pm - Pelu</span></div>
+
+      <div class="dia">Jueves</div>
+      <div class="clase" onclick="reservar('Salsa Intermedio - Jueves 6pm')"><span class="nombre">Salsa Intermedio</span><br><span class="detalle">6 pm - Deisy</span></div>
+      <div class="clase" onclick="reservar('Bachata - Jueves 6pm')"><span class="nombre">Bachata</span><br><span class="detalle">6 pm - Edwar</span></div>
+      <div class="clase" onclick="reservar('Rumba - Jueves 7pm')"><span class="nombre">Rumba</span><br><span class="detalle">7 pm - Ronny</span></div>
+      <div class="clase" onclick="reservar('Pole Dance - Jueves 7pm')"><span class="nombre">Pole Dance</span><br><span class="detalle">7 pm - Camila</span></div>
+      <div class="clase" onclick="reservar('Reggaetón Básico - Jueves 7pm')"><span class="nombre">Reggaetón Básico</span><br><span class="detalle">7 pm - Lil Fox</span></div>
+      <div class="clase" onclick="reservar('Heels - Jueves 8pm')"><span class="nombre">Heels</span><br><span class="detalle">8 pm - Pelu</span></div>
+
+      <div class="dia">Viernes</div>
+      <div class="clase" onclick="reservar('Afro - Viernes 6pm')"><span class="nombre">Afro</span><br><span class="detalle">6 pm - Alessa</span></div>
+      <div class="clase" onclick="reservar('Rumba - Viernes 7pm')"><span class="nombre">Rumba</span><br><span class="detalle">7 pm - Ronny</span></div>
+      <div class="clase" onclick="reservar('Pole Dance - Viernes 7pm')"><span class="nombre">Pole Dance</span><br><span class="detalle">7 pm - Camila</span></div>
+      <div class="clase" onclick="reservar('Reggaetón Intermedio - Viernes 7pm')"><span class="nombre">Reggaetón Intermedio</span><br><span class="detalle">7 pm - Lil Fox</span></div>
+
+      <div class="dia">Sábado</div>
+      <div class="clase" onclick="reservar('Salsa Básica - Sábado 10am')"><span class="nombre">Salsa Básica</span><br><span class="detalle">10 am - Deisy</span></div>
+      <div class="clase" onclick="reservar('Pole Dance - Sábado 11am')"><span class="nombre">Pole Dance</span><br><span class="detalle">11 am - Camila</span></div>
+      <div class="clase" onclick="reservar('Rumba - Sábado 12pm')"><span class="nombre">Rumba</span><br><span class="detalle">12 pm - Ronny</span></div>
+      <div class="clase" onclick="reservar('Reggaetón - Sábado 1pm')"><span class="nombre">Reggaetón</span><br><span class="detalle">1 pm - Lil Fox</span></div>
+      <div class="clase" onclick="reservar('Twerk - Sábado 2pm')"><span class="nombre">Twerk</span><br><span class="detalle">2 pm - Alessa</span></div>
+
+      <div class="dia">Domingo</div>
+      <div class="clase" onclick="reservar('Rumba - Domingo 10am')"><span class="nombre">Rumba</span><br><span class="detalle">10 am - Ronny</span></div>
+      <div class="clase" onclick="reservar('Pole Dance - Domingo 11am')"><span class="nombre">Pole Dance</span><br><span class="detalle">11 am - Camila</span></div>
+      <div class="clase" onclick="reservar('Afro - Domingo 12pm')"><span class="nombre">Afro</span><br><span class="detalle">12 pm - Alessa</span></div>
+    </div>
+  </section>
+
+  <section id="planes" class="seccion" style="display:none;">
+    <h2>Planes</h2>
+    <div class="planes-grid">
+      <div class="plan"><h3>1 clase</h3>$30.000</div>
+      <div class="plan"><h3>2 clases</h3>$58.000</div>
+      <div class="plan"><h3>4 clases</h3>$114.000</div>
+      <div class="plan"><h3>6 clases</h3>$165.000</div>
+      <div class="plan"><h3>8 clases</h3>$216.000</div>
+      <div class="plan"><h3>10 clases</h3>$260.000</div>
+      <div class="plan"><h3>12 clases</h3>$300.000</div>
+      <div class="plan"><h3>14 clases</h3>$343.000</div>
+      <div class="plan"><h3>16 clases</h3>$376.000</div>
+      <div class="plan"><h3>20 clases</h3>$440.000</div>
+      <div class="plan"><h3>25 clases</h3>$538.000</div>
+      <div class="plan"><h3>30 clases</h3>$595.000</div>
+      <div class="plan"><h3>Ilimitado mensual</h3>$680.000</div>
+      <div class="plan"><h3>Ilimitado bimensual</h3>$1’120.000</div>
+      <div class="plan"><h3>Ilimitado semestral</h3>$2’900.000</div>
+      <div class="plan"><h3>Ilimitado anual</h3>$4’800.000</div>
+    </div>
+  </section>
+
+  <section id="quienes-somos" class="seccion" style="display:none;">
+    <h2>¿Quiénes somos?</h2>
+    <p>
+      Somos Brenda Estudio, un lugar feliz hecho para todos y todas.  
+      Un movimiento que busca repartir y entregar felicidad, actitud y vida a través del baile.  
+      Nuestros espacios están hechos para el cuerpo y alma de cada persona que le apuesta a vivir la experiencia de nuestras clases.
+    </p>
+    <div class="galeria">
+      <img src="foto1.jpg" alt="Foto del estudio 1" />
+      <img src="foto2.jpg" alt="Foto del estudio 2" />
+      <img src="foto3.jpg" alt="Foto del estudio 3" />
+      <img src="foto4.jpg" alt="Foto del estudio 4" />
+      <img src="foto5.jpg" alt="Foto del estudio 5" />
+    </div>
+  </section>
+
+  <section id="contacto" class="seccion" style="display:none;">
+    <h2>Contáctanos</h2>
+    <p>¿Quieres agendar una clase? ¡Escríbenos directamente por WhatsApp!</p>
+    <a class="whatsapp-btn" href="https://wa.me/573115933686?text=¡Hola!%20Quiero%20reservar%20una%20clase%20en%20Brenda%20Estudio" target="_blank">Escribir por WhatsApp</a>
+  </section>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(sec => sec.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+      window.scrollTo(0, 0);
+    }
+
+    function reservar(clase) {
+      const mensaje = `¡Quiero reservar cupo para: ${clase}`;
+      window.open(`https://wa.me/573115933686?text=${encodeURIComponent(mensaje)}`, '_blank');
+    }
+  </script>
+
+</body>
+</html>
