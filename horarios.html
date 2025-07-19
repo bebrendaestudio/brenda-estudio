@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Horario Horizontal</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #ff6ec7;
+      font-family: 'Arial', sans-serif;
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      text-shadow: 0 0 10px white;
+      margin-bottom: 10px;
+    }
+
+    .back-button {
+      display: block;
+      margin: 0 auto 30px auto;
+      text-align: center;
+      background-color: white;
+      color: #ff6ec7;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      width: fit-content;
+      box-shadow: 0 0 10px white;
+    }
+
+    .day-block {
+      margin-bottom: 40px;
+    }
+
+    .day-title {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 15px;
+      text-shadow: 0 0 8px #fff;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+      padding-bottom: 5px;
+    }
+
+    .class-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .class-box {
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      padding: 10px 15px;
+      min-width: 220px;
+      max-width: 260px;
+      flex: 1;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+    }
+
+    .class-name {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    .class-time, .class-teacher {
+      font-size: 0.9em;
+    }
+  
+    .class-box:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+      transform: scale(1.05);
+    }
+
+    .back-button {
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      font-size: 0.85em;
+      padding: 6px 14px;
+    }
+    </style>
+
+</head>
+<body>
+  <h1>HORARIO</h1>
+  <a class="back-button" href="index.html">⬅ Volver al inicio</a>
+<div class="day-block">
+  <div class="day-title">Lunes</div>
+  <div class="class-list">
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Salsa%20Básica%20con%20Deisy%20el%20Lunes%20a%20las%206%20pm!" target="_blank">
+      <div class="class-name">Salsa Básica</div>
+      <div class="class-time">6 pm</div>
+      <div class="class-teacher">Deisy</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Rumba%20con%20Ronny%20el%20Lunes%20a%20las%207%20pm!" target="_blank">
+      <div class="class-name">Rumba</div>
+      <div class="class-time">7 pm</div>
+      <div class="class-teacher">Ronny</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Reggaetón%20Intermedio%20con%20Lil%20Fox%20el%20Lunes%20a%20las%207%20pm!" target="_blank">
+      <div class="class-name">Reggaetón Intermedio</div>
+      <div class="class-time">7 pm</div>
+      <div class="class-teacher">Lil Fox</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Pole%20Dance%20con%20Camila%20el%20Lunes%20a%20las%207%20pm!" target="_blank">
+      <div class="class-name">Pole Dance</div>
+      <div class="class-time">7 pm</div>
+      <div class="class-teacher">Camila</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Heels%20con%20Pelu%20el%20Lunes%20a%20las%208%20pm!" target="_blank">
+      <div class="class-name">Heels</div>
+      <div class="class-time">8 pm</div>
+      <div class="class-teacher">Pelu</div>
+    </a>
+  </div>
+</div>
+<div class="day-block">
+  <div class="day-title">Martes</div>
+  <div class="class-list">
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Bachata%20con%20Edwar%20el%20Martes%20a%20las%206%20pm!" target="_blank">
+      <div class="class-name">Bachata</div>
+      <div class="class-time">6 pm</div>
+      <div class="class-teacher">Edwar</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Twerk%20Básico%20con%20Alessa%20el%20Martes%20a%20las%206%20pm!" target="_blank">
+      <div class="class-name">Twerk Básico</div>
+      <div class="class-time">6 pm</div>
+      <div class="class-teacher">Alessa</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Rumba%20con%20Ronny%20el%20Martes%20a%20las%207%20pm!" target="_blank">
+      <div class="class-name">Rumba</div>
+      <div class="class-time">7 pm</div>
+      <div class="class-teacher">Ronny</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Reggaetón%20con%20Ana%20el%20Martes%20a%20las%207%20pm!" target="_blank">
+      <div class="class-name">Reggaetón</div>
+      <div class="class-time">7 pm</div>
+      <div class="class-teacher">Ana</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Sexy%20Style%20con%20Thomas%20el%20Martes%20a%20las%208%20pm!" target="_blank">
+      <div class="class-name">Sexy Style</div>
+      <div class="class-time">8 pm</div>
+      <div class="class-teacher">Thomas</div>
+    </a>
+  </div>
+</div>
+<div class="day-block">
+  <div class="day-title">Miércoles</div>
+  <div class="class-list">
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Rumba%20Mañanera%20con%20Ronny%20el%20Miércoles%20a%20las%206%20am!" target="_blank">
+      <div class="class-name">Rumba Mañanera</div>
+      <div class="class-time">6 am</div>
+      <div class="class-teacher">Ronny</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Rumba%20con%20Ronny%20el%20Miércoles%20a%20las%206%20pm!" target="_blank">
+      <div class="class-name">Rumba</div>
+      <div class="class-time">6 pm</div>
+      <div class="class-teacher">Ronny</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Salsa%20Intermedia%20con%20Deisy%20el%20Miércoles%20a%20las%207%20pm!" target="_blank">
+      <div class="class-name">Salsa Intermedia</div>
+      <div class="class-time">7 pm</div>
+      <div class="class-teacher">Deisy</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Reggaetón%20con%20Lil%20Fox%20el%20Miércoles%20a%20las%207%20pm!" target="_blank">
+      <div class="class-name">Reggaetón</div>
+      <div class="class-time">7 pm</div>
+      <div class="class-teacher">Lil Fox</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Champeta%20con%20Armando%20el%20Miércoles%20a%20las%208%20pm!" target="_blank">
+      <div class="class-name">Champeta</div>
+      <div class="class-time">8 pm</div>
+      <div class="class-teacher">Armando</div>
+    </a>
+  </div>
+</div>
+<div class="day-block">
+  <div class="day-title">Jueves</div>
+  <div class="class-list">
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Twerk%20Intermedio%20con%20Barbie%20el%20Jueves%20a%20las%206%20pm!" target="_blank">
+      <div class="class-name">Twerk Intermedio</div>
+      <div class="class-time">6 pm</div>
+      <div class="class-teacher">Barbie</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Rumba%20con%20Elastic%20el%20Jueves%20a%20las%206%20pm!" target="_blank">
+      <div class="class-name">Rumba</div>
+      <div class="class-time">6 pm</div>
+      <div class="class-teacher">Elastic</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Afro%20con%20Jai%20el%20Jueves%20a%20las%207%20pm!" target="_blank">
+      <div class="class-name">Afro</div>
+      <div class="class-time">7 pm</div>
+      <div class="class-teacher">Jai</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Heels%20con%20Maju%20el%20Jueves%20a%20las%208%20pm!" target="_blank">
+      <div class="class-name">Heels</div>
+      <div class="class-time">8 pm</div>
+      <div class="class-teacher">Maju</div>
+    </a>
+  </div>
+</div>
+<div class="day-block">
+  <div class="day-title">Viernes</div>
+  <div class="class-list">
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Rumba%20Mañanera%20con%20Ronny%20el%20Viernes%20a%20las%206%20am!" target="_blank">
+      <div class="class-name">Rumba Mañanera</div>
+      <div class="class-time">6 am</div>
+      <div class="class-teacher">Ronny</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Dancehall%20con%20Lederson%20el%20Viernes%20a%20las%206%20pm!" target="_blank">
+      <div class="class-name">Dancehall</div>
+      <div class="class-time">6 pm</div>
+      <div class="class-teacher">Lederson</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Rumba%20con%20Ronny%20el%20Viernes%20a%20las%207%20pm!" target="_blank">
+      <div class="class-name">Rumba</div>
+      <div class="class-time">7 pm</div>
+      <div class="class-teacher">Ronny</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Pole%20Dance%20con%20Camila%20el%20Viernes%20a%20las%207%20pm!" target="_blank">
+      <div class="class-name">Pole Dance</div>
+      <div class="class-time">7 pm</div>
+      <div class="class-teacher">Camila</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Heels%20con%20Pelu%20el%20Viernes%20a%20las%208%20pm!" target="_blank">
+      <div class="class-name">Heels</div>
+      <div class="class-time">8 pm</div>
+      <div class="class-teacher">Pelu</div>
+    </a>
+  </div>
+</div>
+<div class="day-block">
+  <div class="day-title">Sábado</div>
+  <div class="class-list">
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Rumba%20Fire%20con%20Ronny%20el%20Sábado%20a%20las%209%20am!" target="_blank">
+      <div class="class-name">Rumba Fire</div>
+      <div class="class-time">9 am</div>
+      <div class="class-teacher">Ronny</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Salsa%20Básica%20con%20Uver%20el%20Sábado%20a%20las%2010%20am!" target="_blank">
+      <div class="class-name">Salsa Básica</div>
+      <div class="class-time">10 am</div>
+      <div class="class-teacher">Uver</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Kids%20con%20Valentina%20el%20Sábado%20a%20las%2010%20am!" target="_blank">
+      <div class="class-name">Kids</div>
+      <div class="class-time">10 am</div>
+      <div class="class-teacher">Valentina</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Champeta%20con%20Armando%20el%20Sábado%20a%20las%2010%20am!" target="_blank">
+      <div class="class-name">Champeta</div>
+      <div class="class-time">10 am</div>
+      <div class="class-teacher">Armando</div>
+    </a>
+  </div>
+</div>
+<div class="day-block">
+  <div class="day-title">Domingo</div>
+  <div class="class-list">
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Rumba%20con%20Elastic%20el%20Domingo%20a%20las%209%20am!" target="_blank">
+      <div class="class-name">Rumba</div>
+      <div class="class-time">9 am</div>
+      <div class="class-teacher">Elastic</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Twerk%20Básico%20con%20Alessa%20el%20Domingo%20a%20las%2010%20am!" target="_blank">
+      <div class="class-name">Twerk Básico</div>
+      <div class="class-time">10 am</div>
+      <div class="class-teacher">Alessa</div>
+    </a>
+    <a class="class-box" href="https://wa.me/573115933686?text=¡Quiero%20reservar%20cupo%20para%20la%20clase%20de%20Reggaetón%20Básico%20con%20Thomas%20el%20Domingo%20a%20las%2011%20am!" target="_blank">
+      <div class="class-name">Reggaetón Básico</div>
+      <div class="class-time">11 am</div>
+      <div class="class-teacher">Thomas</div>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
