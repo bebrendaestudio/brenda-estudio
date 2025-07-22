@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brenda Estudio</title>
+  <style>
+    body {
+      margin: 0;
+      background: url('fondo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Arial', sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 30px;
+    }
+
+    nav a {
+      margin: 0 20px;
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+      text-shadow: 0 0 5px white;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffb3ff;
+    }
+
+    header {
+      padding: 90px 20px 30px;
+    }
+
+    .logo {
+      width: 620px;
+      max-width: 95vw;
+      filter: drop-shadow(0 0 25px white);
+    }
+
+    .carrusel-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 60px;
+      overflow-x: auto;
+      padding: 0 10px;
+      background: transparent;
+    }
+
+    .carrusel {
+      display: flex;
+      gap: 20px;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 10px;
+    }
+
+    .carrusel::-webkit-scrollbar {
+      display: none;
+    }
+
+    .carrusel a img {
+      width: 280px;
+      height: 180px;
+      border-radius: 15px;
+      flex-shrink: 0;
+      object-fit: cover;
+      scroll-snap-align: start;
+      transition: transform 0.3s ease;
+    }
+
+    .carrusel a:hover img {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 768px) {
+      .logo {
+        width: 320px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔗 MENÚ DE NAVEGACIÓN (ARRIBA) -->
+  <nav>
+    <a href="horarios.html">Reservas</a>
+    <a href="planes.html">Planes</a>
+    <a href="quienes-somos.html">Quiénes somos</a>
+    <a href="contacto.html">Contáctanos</a>
+  </nav>
+
+  <!-- LOGO -->
+  <header>
+    <img src="logo-blanco.png" alt="Brenda Estudio" class="logo" />
+
+    <!-- Carrusel horizontal con imágenes clickeables sin bordes -->
+    <div class="carrusel-container">
+      <div class="carrusel">
+        <a href="foto1.jpg" target="_blank"><img src="foto1.jpg" alt="Foto 1" /></a>
+        <a href="foto2.jpg" target="_blank"><img src="foto2.jpg" alt="Foto 2" /></a>
+        <a href="foto3.jpg" target="_blank"><img src="foto3.jpg" alt="Foto 3" /></a>
+        <a href="foto6.jpg" target="_blank"><img src="foto6.jpg" alt="Foto 6" /></a>
+      </div>
+    </div>
+  </header>
+
+</body>
+</html>
