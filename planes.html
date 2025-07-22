@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>PLANES - Brenda Estudio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('fondo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-top: 80px;
+      text-shadow: 0 0 8px white;
+    }
+
+    .planes-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+      max-width: 1200px;
+      margin: 50px auto;
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .plan-box {
+      width: 250px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 0 10px white;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      text-decoration: none;
+      color: white;
+    }
+
+    .plan-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #ff69b4;
+    }
+
+    .plan-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    .plan-price {
+      font-size: 18px;
+    }
+
+    .vigencia {
+      max-width: 600px;
+      margin: 40px auto;
+      font-size: 16px;
+      
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 10px #ff69b4;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-button">Volver al inicio</a>
+  <h1>PLANES</h1>
+
+  <div class="planes-container">
+    <a class="plan-box" href="https://wa.me/573115933686?text=Quiero%20comprar%20el%20plan%201%20clase">
+      <div class="plan-title">1 Clase</div>
+      <div class="plan-price">$30.000</div>
+    </a>
+    <a class="plan-box" href="https://wa.me/573115933686?text=Quiero%20comprar%20el%20plan%202%20clases">
+      <div class="plan-title">2 Clases</div>
+      <div class="plan-price">$58.000</div>
+    </a>
+    <a class="plan-box" href="https://wa.me/573115933686?text=Quiero%20comprar%20el%20plan%204%20clases">
+      <div class="plan-title">4 Clases</div>
+      <div class="plan-price">$114.000</div>
+    </a>
+    <a class="plan-box" href="https://wa.me/573115933686?text=Quiero%20comprar%20el%20plan%206%20clases">
+      <div class="plan-title">6 Clases</div>
+      <div class="plan-price">$165.000</div>
+    </a>
+    <a class="plan-box" href="https://wa.me/573115933686?text=Quiero%20comprar%20el%20plan%208%20clases">
+      <div class="plan-title">8 Clases</div>
+      <div class="plan-price">$216.000</div>
+    </a>
+    <a class="plan-box" href="https://wa.me/573115933686?text=Quiero%20comprar%20el%20plan%2010%20clases">
+      <div class="plan-title">10 Clases</div>
+      <div class="plan-price">$260.000</div>
+    </a>
+    <a class="plan-box" href="https://wa.me/573115933686?text=Quiero%20comprar%20el%20plan%2012%20clases">
+      <div class="plan-title">12 Clases</div>
+      <div class="plan-price">$300.000</div>
+    </a>
+    <a class="plan-box" href="https://wa.me/573115933686?text=Quiero%20comprar%20el%20plan%2014%20clases">
+      <div class="plan-title">14 Clases</div>
+      <div class="plan-price">$343.000</div>
+    </a>
+    <a class="plan-box" href="https://wa.me/573115933686?text=Quiero%20comprar%20el%20plan%2016%20clases">
+      <div class="plan-title">16 Clases</div>
+      <div class="plan-price">$376.000</div>
+    </a>
+    <a class="plan-box" href="https://wa.me/573115933686?text=Quiero%20comprar%20el%20plan%2020%20clases">
+      <div class="plan-title">20 Clases</div>
+      <div class="plan-price">$440.000</div>
+    </a>
+    <a class="plan-box" href="https://wa.me/573115933686?text=Quiero%20comprar%20el%20plan%2025%20clases">
+      <div class="plan-title">25 Clases</div>
+      <div class="plan-price">$538.000</div>
+    </a>
+    <a class="plan-box" href="https://wa.me/573115933686?text=Quiero%20comprar%20el%20plan%2030%20clases">
+      <div class="plan-title">30 Clases</div>
+      <div class="plan-price">$595.000</div>
+    </a>
+    <a class="plan-box" href="https://wa.me/573115933686?text=Quiero%20comprar%20el%20Plan%20Ilimitado%20Mensual">
+      <div class="plan-title">Plan Ilimitado Mensual</div>
+      <div class="plan-price">$680.000</div>
+    </a>
+    <a class="plan-box" href="https://wa.me/573115933686?text=Quiero%20comprar%20el%20Plan%20Ilimitado%20Bimensual">
+      <div class="plan-title">Plan Ilimitado Bimensual</div>
+      <div class="plan-price">$1’120.000</div>
+    </a>
+    <a class="plan-box" href="https://wa.me/573115933686?text=Quiero%20comprar%20el%20Plan%20Ilimitado%20Semestral">
+      <div class="plan-title">Plan Ilimitado Semestral</div>
+      <div class="plan-price">$2’900.000</div>
+    </a>
+    <a class="plan-box" href="https://wa.me/573115933686?text=Quiero%20comprar%20el%20Plan%20Ilimitado%20Anual">
+      <div class="plan-title">Plan Ilimitado Anual</div>
+      <div class="plan-price">$4’800.000</div>
+    </a>
+  </div>
+
+  <div class="vigencia">
+    <strong>VIGENCIA DE PLANES</strong><br><br>
+    Plan 1 clase: 1 semana<br>
+    Plan 2 clases: 2 semanas<br>
+    Del plan 4 clases al plan 12 clases: 1 mes<br>
+    Del plan 14 clases al plan 16 clases: 5 semanas<br>
+    Plan 20 clases: 7 semanas<br>
+    Plan 25 clases y plan 30 clases: 2 meses<br><br>
+    <em>Los planes no se congelan ni extienden</em>
+  </div>
+</body>
+</html>
