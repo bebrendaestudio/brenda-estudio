@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Brenda Estudio</title>
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('fondo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+    }
+
+    .logo {
+      width: 620px;
+      margin: 80px auto 30px auto;
+      display: block;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 10px 20px 30px 20px;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .sections {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .sections a {
+      text-decoration: none;
+      color: white;
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      text-shadow: 0 0 6px #fff;
+      box-shadow: 0 0 10px white;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .sections a:hover {
+      background-color: rgba(255, 105, 180, 0.6);
+      transform: scale(1.05);
+    }
+
+    @media screen and (max-width: 768px) {
+      .logo {
+        width: 90%;
+        margin-top: 40px;
+      }
+
+      .sections {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-top: 30px;
+      }
+
+      .sections a {
+        font-size: 16px;
+        padding: 12px;
+      }
+
+      .gallery {
+        gap: 8px;
+        margin-bottom: 40px;
+      }
+
+      .gallery img {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        height: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+<img alt="Brenda Estudio Logo" class="logo" src="logo-blanco.png"/>
+<div class="gallery">
+<img alt="Foto 1" src="foto1.jpg"/>
+<img alt="Foto 2" src="foto2.jpg"/>
+<img alt="Foto 3" src="foto3.jpg"/>
+<img alt="Foto 4" src="foto6.jpg"/>
+</div>
+<div class="sections">
+<a href="reservas.html">Reservas</a>
+<a href="planes.html">Planes</a>
+<a href="quienes-somos.html">Quiénes Somos</a>
+<a href="contacto.html">Contáctanos</a>
+</div>
+</body>
+</html>
