@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<title>Quiénes Somos - Brenda Estudio</title>
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('fondo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-top: 100px;
+      text-shadow: 0 0 8px white;
+    }
+
+    .texto {
+      max-width: 850px;
+      margin: 30px auto 50px;
+      font-size: 18px;
+      line-height: 1.8;
+      padding: 0 20px;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      max-width: 1000px;
+      margin: 0 auto 60px;
+      padding: 0 20px;
+    }
+
+    .galeria a {
+      display: block;
+    }
+
+    .galeria img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 12px white;
+      transition: transform 0.2s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 10px #ff69b4;
+    }
+
+    .back-button:hover {
+      background-color: #ff85c1;
+    }
+  
+
+@media screen and (max-width: 768px) {
+  .quienes-texto {
+    padding: 0 20px !important;
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    text-align: justify !important;
+  }
+
+  .gallery {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+    justify-items: center !important;
+    padding: 10px 20px !important;
+  }
+
+  .gallery img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 160px !important;
+    object-fit: cover !important;
+  }
+
+  h1 {
+    font-size: 26px !important;
+    margin-top: 50px !important;
+  }
+}
+</style>
+</head>
+<body>
+<a class="back-button" href="index.html">Volver al inicio</a>
+<h1>¡Somos el lugar más feliz del mundo!</h1>
+<div class="texto">
+<p>Brenda Estudio nace del sueño, pasión e infinito amor de 3 mujeres y se plasma en un movimiento que busca transformar la vida de las personas a través del baile. Nuestros espacios están hechos para vivir experiencias con cada ritmo, cada clase es un mundo de oportunidades para liberarse y sentirse diferente. Nuestros profesores son el reflejo de lo que somos, su arte, talento y actitud hacen de<br/><strong>Brenda Estudio un lugar para ser</strong>.</p>
+</div>
+<div class="galeria">
+<a href="img1.jpg" target="_blank"><img alt="Brenda Estudio 1" src="img1.jpg"/></a>
+<a href="img2.jpg" target="_blank"><img alt="Brenda Estudio 2" src="img2.jpg"/></a>
+<a href="img3.jpg" target="_blank"><img alt="Brenda Estudio 3" src="img3.jpg"/></a>
+<a href="img4.jpg" target="_blank"><img alt="Brenda Estudio 4" src="img4.jpg"/></a>
+<a href="img5.jpg" target="_blank"><img alt="Brenda Estudio 5" src="img5.jpg"/></a>
+<a href="img6.jpg" target="_blank"><img alt="Brenda Estudio 6" src="img6.jpg"/></a>
+<a href="img7.jpg" target="_blank"><img alt="Brenda Estudio 7" src="img7.jpg"/></a>
+<a href="img8.jpg" target="_blank"><img alt="Brenda Estudio 8" src="img8.jpg"/></a>
+</div>
+</body>
+</html>
