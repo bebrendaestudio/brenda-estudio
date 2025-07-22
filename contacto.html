@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contáctanos - Brenda Estudio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('fondo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Arial', sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 80px 0 30px;
+      text-shadow: 0 0 8px white;
+    }
+
+    .icons {
+      margin: 30px 0;
+    }
+
+    .icon {
+      display: inline-block;
+      margin: 0 20px;
+    }
+
+    .icon-frame {
+      background-color: white;
+      padding: 12px;
+      border-radius: 20px;
+      width: 85px;
+      height: 85px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+    }
+
+    .icon img {
+      width: 55px;
+      height: 55px;
+    }
+
+    .icon p {
+      margin-top: 10px;
+      font-size: 18px;
+      color: white;
+    }
+
+    .info-text {
+      font-size: 18px;
+      margin-top: 40px;
+      font-weight: 500;
+      line-height: 1.8;
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 10px #ff69b4;
+    }
+
+    .back-button:hover {
+      background-color: #ff85c1;
+    }
+
+    .whatsapp-box {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 280px;
+      background-color: white;
+      color: black;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #25d366;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+      z-index: 1000;
+    }
+
+    .whatsapp-header {
+      background-color: #25d366;
+      padding: 10px;
+      color: white;
+      font-weight: bold;
+      text-align: left;
+      display: flex;
+      align-items: center;
+    }
+
+    .whatsapp-header img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .whatsapp-message {
+      padding: 12px;
+      text-align: left;
+      font-size: 14px;
+      background-color: #e5e5e5;
+    }
+
+    .whatsapp-link {
+      display: block;
+      background-color: #25d366;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .whatsapp-link:hover {
+      background-color: #2fe17a;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-button">Volver al inicio</a>
+
+  <h1>Contáctanos</h1>
+
+  <div class="icons">
+    <div class="icon">
+      <a href="https://wa.me/573115933686" target="_blank">
+        <div class="icon-frame">
+          <img src="whatsapp.jpg" alt="WhatsApp">
+        </div>
+      </a>
+      <p>WhatsApp</p>
+    </div>
+    <div class="icon">
+      <a href="https://instagram.com/brendaestudio" target="_blank">
+        <div class="icon-frame">
+          <img src="instagram.jpg" alt="Instagram">
+        </div>
+      </a>
+      <p>Instagram</p>
+    </div>
+    <div class="icon">
+      <a href="https://tiktok.com/@brenda.estudio" target="_blank">
+        <div class="icon-frame">
+          <img src="tiktok.jpg" alt="TikTok">
+        </div>
+      </a>
+      <p>TikTok</p>
+    </div>
+  </div>
+
+  <p class="info-text">
+    📍 <strong>Sede Colina:</strong> Cra 58 #132-12 Piso 3<br>
+    📍 <strong>Sede Cedritos:</strong> Calle 134 #19-11 Piso 2
+  </p>
+
+  <div class="whatsapp-box">
+    <div class="whatsapp-header">
+      <img src="logo-blanco.png" alt="Brenda Estudio">
+      Brenda Estudio
+    </div>
+    <div class="whatsapp-message">
+      ¡Hola! ¿Quieres reservar una clase o tienes dudas? 💬
+    </div>
+    <a class="whatsapp-link" href="https://wa.me/573115933686" target="_blank">Abrir WhatsApp</a>
+  </div>
+</body>
+</html>
